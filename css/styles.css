@@ -1,128 +1,25 @@
 body {
-  background: #e5e5e5;
+  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5e5e5;
+  color: #000000;
 }
-header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-  box-flex: inherit;
-  background: #ffffff;
-}
-
-footer {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
-
-  background: #2f303a;
+a {
+  color: black;
 }
 
 .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
-  font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
-
-  /* identical to box height */
-  letter-spacing: 0.03em;
-
-  color: #2196f3;
+  line-height: 1,2;
+}
+.logo-span {
+   color: #2196F3;
 }
 
-nav {
-  position: absolute;
-  width: 272px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-}
-
-header a[href="mailto:info@devstudio.com"] {
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #757575;
-}
-
-header a[href="tel:48111111111"] {
-  position: absolute;
-  width: 110px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #757575;
-}
-
-.header {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-
-  background: #2f303a;
-}
-
-.team {
-  position: absolute;
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-
-  background: #f5f4fa;
-}
-
-.header-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.06em;
+.logo-span::first-letter {
   text-transform: uppercase;
-
-  color: #ffffff;
 }
 
-.header-button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.button {
+  cursor: pointer;
 }
