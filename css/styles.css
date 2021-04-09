@@ -1,25 +1,180 @@
 body {
   font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #e5e5e5;
-  color: #000000;
-}
-a {
-  color: black;
+  background-color: #fff;
+  color: #212121;
 }
 
-.logo {
+/* LOGO */
+
+.logo1,
+.logo2 {
   font-weight: bold;
   font-size: 26px;
-  line-height: 1,2;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo1 {
+  color: #212121;
+}
+.logo2 {
+  color: #fff;
 }
 .logo-span {
-   color: #2196F3;
+  color: #2196f3;
 }
 
-.logo-span::first-letter {
-  text-transform: uppercase;
+/*NAGŁÓWEK*/
+
+.menu,
+.header-contacts {
+  list-style: none;
+}
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  color: #212121;
+}
+.menu-item:hover,
+.menu-item:focus {
+  color: #2196f3;
+}
+.header-contacts-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  color: #757575;
+}
+.header-contacts-item:hover,
+.header-contacts-item:focus {
+  color: #2196f3;
 }
 
-.button {
+/*STOPKA*/
+.footer {
+  background-color: #2f303a;
+}
+.address-list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address-list-item {
+  text-decoration: none;
+  color: #757575;
+}
+.location {
+  color: #fff;
+}
+.address-list-item:hover,
+.address-list-item:focus {
+  color: #2196f3;
+}
+
+/* SEKCJA "HEADER" */
+.header {
+  background-color: #2f303a;
+}
+.header-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: #fff;
+}
+.header-button {
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #fff;
+}
+
+/* NASZE ATUTY */
+
+.advantages-list {
+  list-style: none;
+  column-count: 4;
+}
+.advantages-list-item-title {
+  font-size: 14px;
+  line-height: 1.14;
+}
+.advantages-list-item-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}
+
+/* CZYM SIĘ ZAJMUJEMY */
+
+.activities-header {
+  font-size: 36px;
+  line-height: 1.16;
+}
+.activities-list {
+  list-style: none;
+  column-count: 3;
+}
+
+/* NASZ ZESPÓŁ */
+.team {
+  background-color: #f5f4fa;
+}
+.team-header {
+  font-size: 36px;
+  line-height: 1.16;
+}
+.team-list {
+  list-style: none;
+  column-count: 4;
+}
+.team-list-item {
+  background-color: #fff;
+}
+.teammate {
+  font-weight: 500;
+}
+.teammate,
+.teammate-spec {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.teammate-spec {
+  color: #757575;
+}
+
+/* PORTFOLIO */ 
+.button-list {
+  list-style: none;
+  column-count: 5;
+}
+.button {
+background-color: #F5F4FA;
+border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+cursor: pointer;
+}
+.button:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+.projects-list {
+  list-style: none;
+  column-count: 3;
+}
+.projects-list-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.projects-list-item-category {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #757575;
 }
