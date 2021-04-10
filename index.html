@@ -14,27 +14,27 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <a class="logo1" href="index.html"
-        ><span class="logo-span">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="menu">
-          <li><a class="menu-item" href="index.html">Agencja</a></li>
-          <li><a class="menu-item" href="portfolio.html">Portfolio</a></li>
-          <li><a class="menu-item" href="#">Kontakt</a></li>
+        ><span class="logo-span">Web</span>Studio</a>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-item-link current" href="index.html">Agencja</a></li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="portfolio.html">Portfolio</a></li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#">Kontakt</a></li>
         </ul>
       </nav>
       <ul class="header-contacts">
-        <li>
-          <a class="header-contacts-item" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+        <li class="header-contacts-item">
+          <a class="header-contacts-item-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a>
         </li>
-        <li>
-          <a class="header-contacts-item" href="tel:+48111111111"
-            >+48 111 111 111</a
-          >
+        <li class="header-contacts-item">
+          <a class="header-contacts-item-link" href="tel:+48111111111"
+            >+48 111 111 111</a>
         </li>
       </ul>
     </header>
@@ -42,12 +42,12 @@
     <main>
       <!-- SEKCJA "HEADER" -->
 
-      <section class="header">
-        <h1 class="header-title">
+      <section class="main-header">
+        <h1 class="main-header-title">
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button class="header-button" type="button">Zamów usługe</button>
+        <button class="main-header-button" type="button">Zamów usługe</button>
       </section>
 
       <!--NASZE ATUTY-->
@@ -125,6 +125,7 @@
           <li class="team-list-item">
             <div>
               <img
+                class="teammate-photo"
                 src="images/team/team1.jpg"
                 alt="Zdjęcie John Doe"
                 width="270"
@@ -136,6 +137,7 @@
           </li>
           <li class="team-list-item">
             <img
+              class="teammate-photo"
               src="images/team/team2.jpg"
               alt="Zdjęcie John Doe"
               width="270"
@@ -146,6 +148,7 @@
           </li>
           <li class="team-list-item">
             <img
+              class="teammate-photo"
               src="images/team/team3.jpg"
               alt="Zdjęcie John Doe"
               width="270"
@@ -156,6 +159,7 @@
           </li>
           <li class="team-list-item">
             <img
+              class="teammate-photo"
               src="images/team/team4.jpg"
               alt="Zdjęcie John Doe"
               width="270"
@@ -169,28 +173,28 @@
     </main>
 
     <footer class="footer">
-      <p>
+      <p class="footer-logo">
         <a class="logo2" href="index.html"
           ><span class="logo-span">Web</span>Studio</a
         >
       </p>
-      <address>
+      <address class="address">
         <ul class="address-list">
-          <li>
+          <li class="address-list-item">
             <a
-              class="address-list-item location"
+              class="address-list-item-link location"
               href="https://goo.gl/maps/zoSWpyuoha8AXsmT8"
               target="_blank"
               >m. Warszawa, Aleje Jerozolimskie 21
             </a>
           </li>
-          <li>
-            <a class="address-list-item" href="mailto:info@example.com"
+          <li class="address-list-item">
+            <a class="address-list-item-link" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li>
-            <a class="address-list-item" href="tel:+48111111111"
+          <li class="address-list-item">
+            <a class="address-list-item-link" href="tel:+48111111111"
               >+48 111 111 111</a
             >>
           </li>

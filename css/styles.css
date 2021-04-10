@@ -1,139 +1,176 @@
+:root {
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --main-color: #212121;
+  --second-color: #757575;
+  --third-color: #fff;
+  --fourth-color: rgba(255, 255, 255, 0.6);
+  --hover-color: #2196f3;
+  --first-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+}
 body {
-  font-family: Roboto, Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
-  color: #212121;
+  font-family: var(--main-font);
+  background-color: var(--third-color);
+  color: var(--main-color);
 }
 
-/* LOGO */
+/* ===== LOGO ===== */
 
 .logo1,
 .logo2 {
-  font-weight: bold;
+  font-family: var(--secondary-font);
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 .logo1 {
-  color: #212121;
+  color: var(--main-color);
 }
 .logo2 {
-  color: #fff;
+  color: var(--third-color);
 }
 .logo-span {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 
-/*NAGŁÓWEK*/
+/* ===== END LOGO ===== */
 
-.menu,
+/* ===== NAGŁÓWEK ===== */
+.menu-item .current {
+  color: var(--hover-color);
+}
+.menu-list,
 .header-contacts {
   list-style: none;
 }
-.menu-item {
+.menu-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.menu-item-link:hover,
+.menu-item-link:focus,
+.header-contacts-item-link:hover,
+.header-contacts-item-link:focus {
+  color: var(--hover-color);
+}
+.header-contacts-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  color: #212121;
-}
-.menu-item:hover,
-.menu-item:focus {
-  color: #2196f3;
-}
-.header-contacts-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration: none;
-  color: #757575;
-}
-.header-contacts-item:hover,
-.header-contacts-item:focus {
-  color: #2196f3;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
 }
 
-/*STOPKA*/
+/* ===== END NAGŁÓWEK ===== */
+
+/* ===== STOPKA ===== */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--first-background-color);
 }
 .address-list {
+  font-style: normal;
   list-style: none;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
-.address-list-item {
+.address-list-item-link {
   text-decoration: none;
-  color: #757575;
+  color: var(--fourth-color)
 }
 .location {
-  color: #fff;
+  color: var(--third-color);
 }
-.address-list-item:hover,
-.address-list-item:focus {
-  color: #2196f3;
+.address-list-item-link:hover,
+.address-list-item-link:focus {
+  color: var(--hover-color);
 }
 
-/* SEKCJA "HEADER" */
-.header {
-  background-color: #2f303a;
+/* ===== END STOPKA ===== */
+
+/* ===== SEKCJA "HEADER" ===== */
+
+.main-header {
+  background-color: var(--first-background-color);
 }
-.header-title {
+.main-header-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  color: #fff;
+  color: var(--third-color);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-.header-button {
-  background-color: #2196f3;
+.main-header-button {
+  background-color: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.9;
-  color: #fff;
+  color: var(--third-color);
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-/* NASZE ATUTY */
+/* ===== END SEKCJA "HEADER" ===== */
+
+/* ===== NASZE ATUTY ===== */
 
 .advantages-list {
   list-style: none;
-  column-count: 4;
 }
 .advantages-list-item-title {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .advantages-list-item-text {
   font-size: 14px;
   line-height: 1.7;
-  color: #757575;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
 }
 
-/* CZYM SIĘ ZAJMUJEMY */
+/* ===== END NASZE ATUTY ===== */
+
+/* ===== CZYM SIĘ ZAJMUJEMY ===== */
 
 .activities-header {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 .activities-list {
   list-style: none;
-  column-count: 3;
 }
 
 /* NASZ ZESPÓŁ */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--second-background-color);
 }
 .team-header {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 .team-list {
   list-style: none;
-  column-count: 4;
 }
 .team-list-item {
-  background-color: #fff;
+  background-color: var(--third-color);
 }
 .teammate {
   font-weight: 500;
@@ -142,18 +179,21 @@ body {
 .teammate-spec {
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .teammate-spec {
-  color: #757575;
+  color: var(--second-color);
 }
 
-/* PORTFOLIO */ 
+/* ===== CZYM SIĘ ZAJMUJEMY ===== */
+
+/* ===== PORTFOLIO ===== */ 
 .button-list {
   list-style: none;
   column-count: 5;
 }
 .button {
-background-color: #F5F4FA;
+background-color: var(--second-background-color);
 border-radius: 4px;
 font-weight: 500;
 font-size: 16px;
@@ -161,8 +201,8 @@ line-height: 1.6;
 cursor: pointer;
 }
 .button:hover {
-  background-color: #2196f3;
-  color: #fff;
+  background-color:var(--hover-color);
+  color: var(--third-color);
 }
 .projects-list {
   list-style: none;
@@ -176,5 +216,7 @@ cursor: pointer;
 .projects-list-item-category {
   font-size: 16px;
   line-height: 1.9;
-  color: #757575;
+  color: var(--second-color);
 }
+
+/* ===== END PORTFOLIO ===== */ 
